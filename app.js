@@ -9,6 +9,11 @@ app.use(express.json());
 
 app.use(cors());
 
+//add routes
+
+const adminApi = require('./routes/adminApi');
+app.use(adminApi);
+
 app.get('/',(req,res)=>{
     return res.status(200).json({message: 'hello world'});
 });
