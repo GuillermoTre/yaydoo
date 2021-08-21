@@ -1,5 +1,5 @@
 const centralConfig = require('../config/centralConfig');
-const PoolClass = require('pg');
+const PoolClass = require('pg').Pool;
 
 const pool = new PoolClass({
     user: centralConfig.db_user,
