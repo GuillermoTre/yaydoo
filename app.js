@@ -14,6 +14,9 @@ app.use(cors());
 const adminApi = require('./routes/adminApi');
 app.use(adminApi);
 
+const clientApi = require('./routes/clientApi');
+app.use(clientApi);
+
 app.get('/',(req,res)=>{
     return res.status(200).json({message: 'hello world'});
 });
