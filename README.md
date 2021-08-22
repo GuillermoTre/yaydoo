@@ -31,30 +31,60 @@ Iniciar backend
 
 Endpoints:
 
+---------------------------------------------
+
 endpoint: /admin/createClient
+
 method: post
+
 params: necesita de un body formato {"name": "testing", "password": "test" }
 
+---------------------------------------------
+
 endpoint: /admin/deleteClient
+
 method: delete
+
 params: body format {"client_id": 2}
 
+---------------------------------------------
+
 endpoint: /client/login
+
 method: post
+
 params: {"name": "Doe", "password": "test"}
 
+---------------------------------------------
+
 endpoint:/client/account/:client_id
+
 method: get
+
 params: en url indicar client id ejem, /client/account/1
 
+---------------------------------------------
+
 endpoint:/client/account/:client_id/:date
+
 method: get
+
 params:en url indicar client id ejem, /client/account/1/2021-08-21
 
+---------------------------------------------
+
 endpoint:/client/transaction/:client_id'
+
 method: get
+
 params:en url indicar client id ejem, /client/transaction/1
 
+---------------------------------------------
+
 endpoint: /client/transaction/:client_id/:date
+
 method: get
+
 params: en url indicar client id ejem, /client/transaction/1/2021-08-21
+
+---------------------------------------------
